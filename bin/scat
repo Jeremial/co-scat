@@ -1,0 +1,22 @@
+#!/usr/bin/env node --harmony
+
+var program = require('commander')
+    , co = require('co')
+    , pkg = require('../package.json')
+    , scat = require('..')
+    ;
+
+program
+    .version(pkg.version)
+    .option('-s, --sps <sps>', 'strings per second', parseInt);
+
+program.on('--help', function(){
+    console.log('Report bugs to <jeremial90@gmail.com>');
+    console.log('');
+});
+
+program.parse(process.argv);
+
+if(program.args.length){
+    co(scat)(program.args, program.sps || 50);
+}

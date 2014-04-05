@@ -1,0 +1,41 @@
+{
+  "name": "co-scat",
+  "version": "0.0.1",
+  "description": "slow cat use co",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "scat": "bin/scat"
+  },
+  "keywords": [
+    "slowcat",
+    "generator",
+    "co"
+  ],
+  "author": "Jeremial",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.2.0",
+    "co-sleep": "0.0.1",
+    "co": "^3.0.5",
+    "co-fs": "^1.2.0",
+    "jistype": "0.0.4"
+  },
+  "engines": {
+    "node": ">= 0.11.9"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Jeremial/co-scat"
+  },
+  "bugs": {
+    "url": "https://github.com/Jeremial/co-scat/issues"
+  },
+  "homepage": "https://github.com/Jeremial/co-scat"
+}
