@@ -28,9 +28,16 @@ slow cat your files to stdout
     var scat = require('co-scat');
     var co = require('co');
 
+    // slow cat file
     co(scat)('a.txt', 20);
 
+    // or slow cat raw string
     co(scat.str)('raw string to output', 10);
+
+    // or use in other functions
+    co(function *(){
+        yield scat('../index.js', 30);
+    })();
 
 ### License
 MIT
