@@ -1,4 +1,4 @@
-## scat
+## co-scat
 slow cat your files to stdout
 
 ### Install
@@ -17,7 +17,7 @@ slow cat your files to stdout
         -V, --version    output the version number
         -s, --sps <sps>  strings per second
 
-    Report bugs to <jeremial90@gmail.com>
+      Report bugs to <jeremial90@gmail.com>
 
 ### CLI
 

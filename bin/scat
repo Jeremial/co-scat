@@ -11,7 +11,7 @@ program
     .option('-s, --sps <sps>', 'strings per second', parseInt);
 
 program.on('--help', function(){
-    console.log('Report bugs to <jeremial90@gmail.com>');
+    console.log('  Report bugs to <jeremial90@gmail.com>');
     console.log('');
 });
 
