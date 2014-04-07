@@ -1,6 +1,8 @@
 ## co-scat
 slow cat your files to stdout
 
+![demo](screenshot.gif)
+
 ### Install
 
     npm install co-scat

@@ -1,6 +1,6 @@
 {
   "name": "co-scat",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "slow cat use co",
   "main": "index.js",
   "scripts": {
