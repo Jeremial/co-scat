@@ -26,6 +26,8 @@ slow cat your files to stdout
     % scat -s 20 a.txt b.txt
 
 ### Node.js
+When use `scat` as cli, there's no need to install `co`, but when use `scat` as
+dependence, you should install `co` by your self
 
     var scat = require('co-scat');
     var co = require('co');
