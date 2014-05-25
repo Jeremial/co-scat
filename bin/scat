@@ -3,7 +3,7 @@
 var program = require('commander')
     , co = require('co')
     , pkg = require('../package.json')
-    , scat = require('..')
+    , scatFile = require('..').scatFile
     ;
 
 program
@@ -18,5 +18,5 @@ program.on('--help', function(){
 program.parse(process.argv);
 
 if(program.args.length){
-    co(scat)(program.args, program.sps || 50);
+    co(scatFile)(program.args, program.sps || 50);
 }

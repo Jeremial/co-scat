@@ -1,9 +1,9 @@
-var scat = require('..')
+var scatFile = require('..').scatFile
     , co = require('co')
     ;
 
 // co(scat)('../index.js', 10);
 
 co(function *(){
-    yield scat('../index.js', 10)
-})()
+    yield scatFile('../index.js', 10)
+})();

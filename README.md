@@ -1,7 +1,5 @@
 ## co-scat
-slow cat your files to stdout
-
-![demo](screenshot.gif)
+slow cat your files or raw string to stdout
 
 ### Install
 
@@ -29,18 +27,21 @@ slow cat your files to stdout
 When use `scat` as cli, there's no need to install `co`, but when use `scat` as
 dependence, you should install `co` by your self
 
-    var scat = require('co-scat');
-    var co = require('co');
+    var scat = require('co-scat')
+        , scatFile = scat.scatFile
+        , scatString = scat.scatString
+        , co = require('co')
+        ;
 
     // slow cat file
-    co(scat)('a.txt', 20);
+    co(scatFile)('a.txt', 20);
 
     // or slow cat raw string
-    co(scat.str)('raw string to output', 10);
+    co(scatString)('raw string to output', 10);
 
     // or use in other functions
     co(function *(){
-        yield scat('../index.js', 30);
+        yield scatFile('../index.js', 30);
     })();
 
 ### License
