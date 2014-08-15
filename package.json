@@ -1,6 +1,6 @@
 {
   "name": "co-scat",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "slow cat use co",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "generator",
     "co"
   ],
-  "author": "Jeremial",
+  "author": "Treri",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.2.0",
@@ -32,10 +32,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/Jeremial/co-scat"
+    "url": "https://github.com/Treri/co-scat"
   },
   "bugs": {
-    "url": "https://github.com/Jeremial/co-scat/issues"
+    "url": "https://github.com/Treri/co-scat/issues"
   },
-  "homepage": "https://github.com/Jeremial/co-scat"
+  "homepage": "https://github.com/Treri/co-scat"
 }
